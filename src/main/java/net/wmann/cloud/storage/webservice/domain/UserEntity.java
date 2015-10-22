@@ -44,7 +44,7 @@ public class UserEntity {
 	private boolean activated;
 	
 	@Column(name = "suspended", nullable = false)
-	private boolean suspended;
+	private boolean suspended = false;
 	
 	@Convert(converter = LocalDateTimeConverter.class)
 	@Column(name = "created", nullable = false, updatable = false)
